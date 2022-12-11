@@ -1,4 +1,7 @@
 package com.example.batchprocessing.repositories;
 
-public interface TransactionRepository extends org.springframework.data.jpa.repository.JpaRepository<com.example.batchprocessing.entities.Transaction, long> {
+import com.example.batchprocessing.entities.Transaction;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface TransactionRepository extends JpaRepository<Transaction, Long> {
 }

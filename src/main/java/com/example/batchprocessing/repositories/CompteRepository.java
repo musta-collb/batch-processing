@@ -1,4 +1,7 @@
 package com.example.batchprocessing.repositories;
 
-public interface CompteRepository extends org.springframework.data.jpa.repository.JpaRepository<com.example.batchprocessing.entities.Compte, long> {
+import com.example.batchprocessing.entities.Compte;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface CompteRepository extends JpaRepository<Compte, Long> {
 }
